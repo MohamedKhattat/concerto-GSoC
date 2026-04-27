@@ -149,3 +149,32 @@ Copyright 2018-2019 Clause, Inc. All trademarks are the property of their respec
 
 [apache]: https://github.com/accordproject/concerto/blob/master/LICENSE
 [creativecommons]: http://creativecommons.org/licenses/by/4.0/
+
+---
+
+## Browser Schema Explorer — GSoC 2026
+
+> Branch: [`mhk-concerto-setup`](https://github.com/MohamedKhattat/concerto-GSoC/tree/mhk-concerto-setup)
+
+A browser-compatible Concerto schema explorer built as part of the GSoC 2026 contribution.
+Loads `concerto-core` directly in the browser — no Node.js required.
+
+**Features:**
+- Parse and introspect real `.cto` models from the project
+- Validate JSON data against a Concerto schema via `ModelManager` + `Serializer`
+- Upload any custom `.cto` file and inspect it live
+- i18n support: English · Français · العربية (with RTL layout)
+
+**Validated schema output:**
+
+![Concerto schema validation](browser/schema-validated.png)
+
+> Screenshot: `readme@1.0.0` — Person concept validated against JSON sample in the browser.
+
+**Run locally:**
+```bash
+npx serve . -p 3333
+# open http://localhost:3333/test-browser.html
+```
+
+**Contributor:** Mohamed Habib Khattat — [github.com/MohamedKhattat](https://github.com/MohamedKhattat)
